@@ -1,1 +1,2 @@
-# libsass-snap
+# libsass
+Snap for libsass

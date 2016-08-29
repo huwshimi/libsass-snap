@@ -1,0 +1,15 @@
+name: libsass
+version: "0.1"
+summary: SASS for Python
+description: A straightforward binding of libsass for Python. Compile Sass/SCSS in Python with no Ruby stack at all! https://hongminhee.org/libsass-python/
+confinement: strict
+
+apps:
+  libsass:
+    command: usr/bin/sassc
+    plugs: [home]
+
+parts:
+  libsass:
+    plugin: python3
+    source: https://github.com/dahlia/libsass-python/releases/download/0.11.1/libsass-0.11.1.tar.gz
